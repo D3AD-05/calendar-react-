@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+calendar project done with javascript react fron scratch   (without calendar library )
 
 ## Available Scripts
 
