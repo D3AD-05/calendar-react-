@@ -1,14 +1,33 @@
 import React from "react";
+import './calan.css';
 
-function Header({onNextClick, onPrvClick,dateDisplay}) {
+
+function Header({ toDay, dateDisplay ,onPrvClick, onNextClick}) {
 
     return (
-        <>
-        
-            <button onClick={onPrvClick} >prv </button>
+        <div className="calendar-left">
+            <div className="triangle-left" onClick={onPrvClick}></div>
+                    <div className="triangle-right" onClick={onNextClick} ></div>
+            <div className="num-date">{toDay}</div>
             <div className="day">{dateDisplay}</div>
-            <button onClick={onNextClick}  >  next  </button>
-        </>
+            <div className="current-events">Current Events
+                <br />
+                <ul>
+                    <li>Day {dateDisplay}</li>
+                </ul>
+                <span className="posts">See post events</span></div>
+
+            <div className="create-event">Create an Event</div>
+            <hr className="event-line" />
+            <div className="add-event"><span className="add">+</span></div>
+
+        </div>
+
     )
 }
 export default Header;
+
+
+{/* 
+<div className="year">{year}</div>
+<button onClick={onNextClick}  >  next  </button> */}

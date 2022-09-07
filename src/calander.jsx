@@ -114,6 +114,7 @@ function Calendar() {
 
 
             
+                <div className={day<=0 ? 'paddingd':'weekd'}>{day}</div>
 
         </>
     )
